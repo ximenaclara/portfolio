@@ -74,7 +74,14 @@ h2 {
     cursor: pointer;
 }
 .hidden {
-    display: none; /* Hides the element */
+    display: none; 
+}
+
+.projects img {
+    max-width: 90%;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 1rem;
 }
 
 #xime-child {
