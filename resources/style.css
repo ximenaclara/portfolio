@@ -1,0 +1,89 @@
+/*General*/
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;   
+    height: 4rem;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 1000;    
+    background-color: white;
+    
+}
+
+h1 {
+    color: #373741;
+    font-family: "Proza Libre", sans-serif;
+    margin-left: 1rem;
+}
+
+nav ul {
+    margin-right: 40px;
+}
+nav li {
+    display: inline-flex;
+    padding: 5px;
+    text-decoration: underline;           
+    font-family: "Proza Libre", sans-serif;
+}
+nav li a {
+    color: #373741; 
+}
+
+/*Body*/
+main {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 6rem;
+    display: flex; /* Enables Flexbox for this section */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Adds space between the image and the text */
+    width: 80%;
+}
+
+h2 {
+    background-color: #373741;
+    color: #e1d8cf;
+    margin-bottom: 0%;
+    padding-left: 0.5rem;  
+    margin: 0;  
+}
+
+
+.content {
+    background-color: #e1d8cf;    
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.content p {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    padding: 0.5rem ;
+}
+    
+#about-me-section {
+    padding-top: 0;
+    margin-top: 0;
+    background-color: transparent;
+}
+
+#projects-section li {
+    cursor: pointer;
+}
+.hidden {
+    display: none; /* Hides the element */
+}
+
+#xime-child {
+    max-width: 50%; /* Ensures the image does not overflow */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    margin-top: 6rem;
+    margin-left: 6rem;
+    position: relative;
+    bottom: 1rem;
+}
+
