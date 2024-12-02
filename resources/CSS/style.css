@@ -84,6 +84,23 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.skills-logos {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.skills-logos img {
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height to ensure consistency */
+    object-fit: contain; /* Ensures the images are scaled while preserving aspect ratio */
+    margin: 0 10px; /* Optional: Adds space between the logos */
+}
+
+
 #xime-child {
     max-width: 50%; /* Ensures the image does not overflow */
     height: auto; /* Maintains the image's aspect ratio */
