@@ -13,3 +13,18 @@ projectsLi.forEach((li) => {
         }
     });
 });
+
+// Get the images
+const ximeChild = document.getElementById("xime-child");
+const ximeAdult = document.getElementById("xime-adult");
+
+// Add event listeners to toggle visibility on click
+ximeChild.addEventListener("click", () => {
+    ximeChild.classList.toggle("hidden");
+    ximeAdult.classList.toggle("hidden");
+});
+
+ximeAdult.addEventListener("click", () => {
+    ximeAdult.classList.toggle("hidden");
+    ximeChild.classList.toggle("hidden");
+});

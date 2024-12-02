@@ -111,3 +111,12 @@ h2 {
     bottom: 1rem;
 }
 
+#xime-adult {
+    max-width: 35%; 
+    border-radius: 8px;
+    margin-top: 6rem;
+    margin-left: 6rem;
+    position: relative;
+    bottom: 1rem;
+}
+
