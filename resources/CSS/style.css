@@ -34,6 +34,7 @@ nav li a {
 }
 
 /*Body*/
+
 main {
     font-family: "Open Sans", sans-serif;
     margin-top: 6rem;
@@ -113,6 +114,7 @@ h2 {
 
 #xime-adult {
     max-width: 35%; 
+    height: auto;
     border-radius: 8px;
     margin-top: 6rem;
     margin-left: 6rem;

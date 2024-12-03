@@ -1,0 +1,57 @@
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;   
+    height: 4rem;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 1000;    
+    background-color: white;
+    
+}
+
+h1 {
+    color: #373741;
+    font-family: "Proza Libre", sans-serif;
+    margin-left: 1rem;
+}
+
+nav ul {
+    margin-right: 40px;
+}
+nav li {
+    display: inline-flex;
+    padding: 5px;
+    text-decoration: underline;           
+    font-family: "Proza Libre", sans-serif;
+}
+nav li a {
+    color: #373741; 
+}
+
+/* Body */
+main {
+    margin-top: 4.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+    color: #373741;
+    font-family: "Proza Libre", sans-serif;    
+}
+main ul {
+    display: flex;
+    justify-content: left;   
+    }
+main li {
+    display: inline-flex;    
+}
+
+.contact-list img {
+    width: 4rem; /* Adjust the size */
+    height: auto;
+    object-fit: contain;
+    margin: 1rem; 
+}
