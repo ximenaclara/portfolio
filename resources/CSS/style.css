@@ -1,6 +1,7 @@
 /*General*/
 
 /*Header*/
+
 header{
     display: flex;
     justify-content: space-between;   
@@ -11,21 +12,33 @@ header{
     width: 100%;
     z-index: 1000;    
     background-color: white;
-    
+    /*responsiveness*/
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;    
 }
 
 h1 {
     color: #373741;
     font-family: "Proza Libre", sans-serif;
     margin-left: 1rem;
+    margin: 0.5rem 0;
+    text-align: center;
 }
 
-nav ul {
-    margin-right: 40px;
+nav ul {    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 nav li {
     display: inline-flex;
-    padding: 5px;
+    font-size: 14px;
+    padding: 5px 10px;    
     text-decoration: underline;           
     font-family: "Proza Libre", sans-serif;
 }
@@ -35,13 +48,21 @@ nav li a {
 
 /*Body*/
 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     font-family: "Open Sans", sans-serif;
-    margin-top: 6rem;
+    margin-top: 7rem;
+    margin-left: 1rem;
     display: flex; /* Enables Flexbox for this section */
     align-items: center; /* Aligns items vertically */
     gap: 20px; /* Adds space between the image and the text */
     width: 80%;
+   
 }
 
 h2 {
@@ -122,3 +143,98 @@ h2 {
     bottom: 1rem;
 }
 
+/* RESPONSIVENESS */
+/* Media Queries for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+
+    nav li {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    main {
+        flex-direction: column;
+        width: 90%;
+        margin: 6rem auto 0 auto;
+        gap: 20px;
+    }
+
+    .skills-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .skills-logos img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #xime-child,
+    #xime-adult {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Media Queries for Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    nav li {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .skills-logos img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #xime-child,
+    #xime-adult {
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+}
